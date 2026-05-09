@@ -279,8 +279,13 @@ footer {
 .copy {
     text-align: center;
     margin-top: 30px;
+    color: white;
     border-top: 1px solid gray;
     padding-top: 15px;
+}
+
+.footerp {
+    color: white;
 }
 
 div img {
@@ -323,6 +328,10 @@ body {
     font-family: Arial;
     margin: 0;
     background: #f5f5f5;
+}
+
+P {
+    color: black;
 }
 
 h2 {
