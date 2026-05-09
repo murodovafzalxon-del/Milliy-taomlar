@@ -83,7 +83,7 @@ section h2:hover {
 }
 
 .input {
-    padding: 20px 5px;
+    padding: 10px 5px;
 }
 
 .login {
@@ -125,10 +125,6 @@ header input {
     border-radius: 10px;
 }
 
-.search-box input {
-    padding: 10px;
-}
-
 .search-box button {
     padding: 10px;
     background: red;
@@ -144,6 +140,7 @@ header input {
 
 .search-box input {
     padding: 10px;
+    gap: 30px;
     width: 250px;
     border: none;
     border-radius: 5px;
