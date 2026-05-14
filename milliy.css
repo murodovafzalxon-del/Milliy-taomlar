@@ -5,6 +5,59 @@
     font-family: Arial;
 }
 
+#toggle-modal {
+    display: none;
+}
+
+#toggle-modal:checked~.modal {
+    display: block;
+}
+
+.modal-btn {
+    padding: 5px 15px;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: 0.9s;
+}
+.modal-btn:hover{
+    box-shadow: 0 0 20px rgb(60, 255, 0);
+}
+
+.modal {
+    width: 600px;
+    height: 400px;
+    justify-content: center;
+    background-color: rgb(215, 235, 135);
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgb(189, 189, 189);
+    padding: 20px;
+    position: absolute;
+    top: 150%;
+    left: 31%;
+    display: none;
+    transition: 0.5s;
+}
+
+.modal h2 {
+    margin-bottom: 30px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.close-modal {
+    position: absolute;
+    left: 565px;
+    top: 15px;
+}
+
 #toggle-theme {
     display: none;
 }
@@ -198,6 +251,7 @@ header input {
 
 .card {
     transition: 0.9s;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 350px;
     padding: 40px 30px;
