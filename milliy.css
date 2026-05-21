@@ -5,6 +5,10 @@
     font-family: Arial;
 }
 
+.step-p {
+    color: black;
+}
+
 #toggle-modal {
     display: none;
 }
@@ -18,10 +22,10 @@
     background-color: chartreuse;
     border: none;
     border-radius: 10px;
-    margin-bottom: 10px;
     transition: 0.9s;
 }
-.modal-btn:hover{
+
+.modal-btn:hover {
     box-shadow: 0 0 20px rgb(60, 255, 0);
 }
 
@@ -29,15 +33,19 @@
     width: 600px;
     height: 400px;
     justify-content: center;
-    background-color: rgb(215, 235, 135);
+    background-color: white;
     border-radius: 10px;
     box-shadow: 4px 4px 10px rgb(189, 189, 189);
     padding: 20px;
-    position: absolute;
     top: 150%;
     left: 31%;
     display: none;
     transition: 0.5s;
+    position: fixed;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal h2 {
@@ -249,21 +257,7 @@ header input {
     gap: 50px;
 }
 
-.card {
-    transition: 0.9s;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 350px;
-    padding: 40px 30px;
-    text-align: center;
-    border-radius: 20px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 5px gray;
-    width: 300px;
-    transform: rotateX(10deg) rotateY(10deg) scale(1.1);
-}
+
 
 .card:hover {
     box-shadow: 0 0 40px #00fff2;
@@ -279,7 +273,23 @@ header input {
     padding: 20px;
 }
 
-/* FOOTER */
+.card {
+    transition: 0.9s;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    transform: rotateX(10deg) rotateY(10deg) scale(1.1);
+    z-index: 1000px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
 footer {
     background: #222;
     color: white;
@@ -400,13 +410,17 @@ h2 {
     gap: 40px;
 }
 
+
 .step h4 {
     font-size: 30px;
     margin-bottom: 20px;
+    color: black;
 }
 
+
 .step {
-    transition: 0.7s;
+    transition: 0.9s;
+    flex-direction: column;
     flex-wrap: wrap;
     padding: 40px 30px;
     text-align: center;
@@ -434,16 +448,6 @@ h2 {
     flex-wrap: wrap;
 }
 
-.card {
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-    gap: 60px;
-    width: 300px;
-    text-align: center;
-    justify-content: space-around;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
 
 .card img {
     width: 100%;
@@ -482,16 +486,10 @@ h2 {
 
 .restaurants {
     padding: 40px;
-    margin-bottom: 30px;
 }
 
 .restaurants h2 {
     gap: 60px;
-}
-
-.popular {
-    margin-bottom: 30px;
-    padding: 30px;
 }
 
 .steaker {
